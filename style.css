@@ -1,0 +1,431 @@
+/* ==========================
+Reset básico
+========================== */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+line-height: 1.6;
+color: #333;
+background-color: #f5f5f5;
+}
+
+/* ==========================
+Header e Navegação
+========================== */
+header {
+background-color: #2b7a0b;
+color: white;
+padding: 20px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+header .logo {
+font-size: 1.5em;
+font-weight: bold;
+}
+
+header nav ul {
+display: flex;
+list-style: none;
+gap: 20px;
+}
+
+header nav ul li a {
+color: white;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+color: #cfe873;
+}
+
+.menu-toggle {
+display: none;
+font-size: 1.8em;
+cursor: pointer;
+}
+
+/* ==========================
+Hero Section
+========================== */
+.hero {
+background: linear-gradient(135deg, #a8e063, #56ab2f);
+color: white;
+text-align: center;
+padding: 100px 20px;
+animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+font-size: 2.5em;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 1.2em;
+margin-bottom: 30px;
+}
+
+.hero button {
+padding: 10px 25px;
+border: none;
+border-radius: 5px;
+background-color: #ffffffcc;
+color: #2b7a0b;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.hero button:hover {
+background-color: white;
+transform: scale(1.05);
+}
+
+/* ==========================
+Seções
+========================== */
+.section {
+padding: 60px 20px;
+max-width: 1000px;
+margin: auto;
+}
+
+.section h2 {
+text-align: center;
+margin-bottom: 30px;
+color: #2b7a0b;
+}
+
+/* Cards */
+.cards {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+.card {
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+flex: 1 1 250px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Lista de Sustentabilidade */
+.sustain-list {
+list-style: disc inside;
+max-width: 600px;
+margin: auto;
+}
+
+.sustain-list li {
+padding: 10px 0;
+font-size: 1.1em;
+}
+
+/* Formulário */
+form {
+max-width: 500px;
+margin: auto;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+form input, form textarea, form button {
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 1em;
+}
+
+form button {
+background-color: #2b7a0b;
+color: white;
+border: none;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+form button:hover {
+background-color: #1f5d09;
+}
+
+/* Footer */
+footer {
+text-align: center;
+padding: 20px;
+background-color: #2b7a0b;
+color: white;
+}
+
+/* ==========================
+Responsividade
+========================== */
+@media (max-width: 768px) {
+header nav ul {
+display: none;
+flex-direction: column;
+background-color: #2b7a0b;
+position: absolute;
+top: 70px;
+right: 0;
+width: 200px;
+padding: 20px;
+border-radius: 5px;
+}
+
+header nav ul.active {
+display: flex;
+}
+
+.menu-toggle {
+display: block;
+}
+
+.cards {
+flex-direction: column;
+}
+}
+
+/* ==========================
+Animações
+========================== */
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+}/* ==========================
+Reset básico
+========================== */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+line-height: 1.6;
+color: #333;
+background-color: #f5f5f5;
+}
+
+/* ==========================
+Header e Navegação
+========================== */
+header {
+background-color: #2b7a0b;
+color: white;
+padding: 20px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+header .logo {
+font-size: 1.5em;
+font-weight: bold;
+}
+
+header nav ul {
+display: flex;
+list-style: none;
+gap: 20px;
+}
+
+header nav ul li a {
+color: white;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+color: #cfe873;
+}
+
+.menu-toggle {
+display: none;
+font-size: 1.8em;
+cursor: pointer;
+}
+
+/* ==========================
+Hero Section
+========================== */
+.hero {
+background: linear-gradient(135deg, #a8e063, #56ab2f);
+color: white;
+text-align: center;
+padding: 100px 20px;
+animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+font-size: 2.5em;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 1.2em;
+margin-bottom: 30px;
+}
+
+.hero button {
+padding: 10px 25px;
+border: none;
+border-radius: 5px;
+background-color: #ffffffcc;
+color: #2b7a0b;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.hero button:hover {
+background-color: white;
+transform: scale(1.05);
+}
+
+/* ==========================
+Seções
+========================== */
+.section {
+padding: 60px 20px;
+max-width: 1000px;
+margin: auto;
+}
+
+.section h2 {
+text-align: center;
+margin-bottom: 30px;
+color: #2b7a0b;
+}
+
+/* Cards */
+.cards {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+.card {
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+flex: 1 1 250px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Lista de Sustentabilidade */
+.sustain-list {
+list-style: disc inside;
+max-width: 600px;
+margin: auto;
+}
+
+.sustain-list li {
+padding: 10px 0;
+font-size: 1.1em;
+}
+
+/* Formulário */
+form {
+max-width: 500px;
+margin: auto;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+form input, form textarea, form button {
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 1em;
+}
+
+form button {
+background-color: #2b7a0b;
+color: white;
+border: none;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+form button:hover {
+background-color: #1f5d09;
+}
+
+/* Footer */
+footer {
+text-align: center;
+padding: 20px;
+background-color: #2b7a0b;
+color: white;
+}
+
+/* ==========================
+Responsividade
+========================== */
+@media (max-width: 768px) {
+header nav ul {
+display: none;
+flex-direction: column;
+background-color: #2b7a0b;
+position: absolute;
+top: 70px;
+right: 0;
+width: 200px;
+padding: 20px;
+border-radius: 5px;
+}
+
+header nav ul.active {
+display: flex;
+}
+
+.menu-toggle {
+display: block;
+}
+
+.cards {
+flex-direction: column;
+}
+}
+
+/* ==========================
+Animações
+========================== */
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+}
